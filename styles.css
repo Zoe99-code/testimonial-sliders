@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(https://get.pxhere.com/photo/cloud-black-and-white-sky-white-sunlight-atmosphere-smoke-cumulus-darkness-monochrome-35mm-summicronr-f2-e55-leica-meteorological-phenomenon-monochrome-photography-atmosphere-of-earth-145572.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  font-family: serif;
+}
+
+.slider-container {
+  align-self: center;
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+
+.owl-carousel {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 20px;
+}
+
+.items {
+  display: flex;
+  border-radius: 50px;
+  background: #494646;
+  box-shadow: inset 20px 20px 18px #3e3c3c, inset -20px -20px 18px #545151;
+}
+
+.slider-img {
+  border-radius: 5px;
+  justify-self: flex-start;
+  align-self: center;
+  margin: 0 25px;
+}
+
+.slider-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.slider-text h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.slider-text h2 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.slider-text p {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .owl-carousel {
+    padding: 25px;
+  }
+  .slider-container {
+    width: 70%;
+    height: 70%;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-img {
+    margin: 0 20px;
+  }
+}
